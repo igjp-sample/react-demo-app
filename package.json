@@ -1,11 +1,14 @@
 {
-  "name": "react-dock-manager",
+  "name": "react-demo-app",
+  "homepage": "https://igjp-sample.github.io/react-demo-app",
   "description": "This project provides example of Dock Manager using Infragistics React components",
   "author": "Infragistics",
   "homepage": ".",
   "version": "1.4.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set PORT=4200 && react-scripts --max_old_space_size=10240 start",
     "build": "react-scripts --max_old_space_size=10240 build ",
     "test": "react-scripts test --env=jsdom",

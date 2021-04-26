@@ -504,7 +504,6 @@ class DockManagerUpdatingPanes extends React.Component<any, any> {
             contentId: "barChartSub5Container"
         };
         this.radialChartPane = {
-            size: 100,
             header: this.props.t('Average Scores By Subject'),
             type: IgcDockManagerPaneType.contentPane,
             contentId: "radialChartContainer"
@@ -606,13 +605,14 @@ class DockManagerUpdatingPanes extends React.Component<any, any> {
     }
 
     selectedItemsChanged = (s: IgrDataGrid, e: IgrGridSelectedItemsChangedEventArgs) => {
-        if (e.currentItems.item(0) && e.currentItems.item(0).ID) {
-            const selectedItem = e.currentItems.item(0).Results;
+        const index = s.selectedItems.count - 1;
+        if (index > -1 && e.currentItems.item(index) && e.currentItems.item(index).ID) {
+            const selectedItem = e.currentItems.item(index).Results;
             this.showDetail(
                 selectedItem,
-                e.currentItems.item(0).ID,
-                e.currentItems.item(0).Name,
-                e.currentItems.item(0).ClassNumber
+                e.currentItems.item(index).ID,
+                e.currentItems.item(index).Name,
+                e.currentItems.item(index).ClassNumber
             );
         }
     }
