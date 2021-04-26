@@ -116,6 +116,8 @@ class DockManagerUpdatingPanes extends React.Component<any, any> {
     private currentYear = new Date().getFullYear();
     private previousYear =  this.currentYear - 1;
 
+    private currentSelectedItemID: number;
+
     constructor(props: any) {
         super(props);
 
@@ -606,7 +608,8 @@ class DockManagerUpdatingPanes extends React.Component<any, any> {
 
     selectedItemsChanged = (s: IgrDataGrid, e: IgrGridSelectedItemsChangedEventArgs) => {
         const index = s.selectedItems.count - 1;
-        if (index > -1 && e.currentItems.item(index) && e.currentItems.item(index).ID) {
+        if (index > -1 && e.currentItems.item(index) && e.currentItems.item(index).ID && this.currentSelectedItemID != e.currentItems.item(index).ID) {
+            this.currentSelectedItemID = e.currentItems.item(index).ID;
             const selectedItem = e.currentItems.item(index).Results;
             this.showDetail(
                 selectedItem,
