@@ -1,0 +1,19 @@
+{
+    "Name": "Name",
+    "Students List": "Students List",
+    "ID Number": "ID Number",
+    "Classroom": "Classroom",
+    "Implementation Month": "Month",
+    "Score": "Score",
+    "Average": "Avg",
+    "Average Scores By Subject": "Average Scores By Subject",
+    "Monthly Total Scores": "Monthly Total Scores",
+    "Monthly Test Scores This Year": "Monthly Test Scores {{previousYear}}",
+    "Selected Students Name": "ID:{{ID}} / Classroom:{{ClassNumber}} / Name:{{Name}}",
+    "Search by Name/ID": "Search by Name/ID",
+    "school.subject1": "Math",
+    "school.subject2": "Language Art",
+    "school.subject3": "Reading",
+    "school.subject4": "Science",
+    "school.subject5": "Social Study"
+}

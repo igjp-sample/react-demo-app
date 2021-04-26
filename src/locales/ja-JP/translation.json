@@ -1,0 +1,19 @@
+{
+    "Name": "氏名",
+    "Students List": "学生一覧",
+    "ID Number": "学籍番号",
+    "Classroom": "クラス（組）",
+    "Implementation Month": "実施月",
+    "Score": "点数",
+    "Average": "平均",
+    "Average Scores By Subject": "教科別平均点",
+    "Monthly Total Scores": "合計得点（月別）",
+    "Monthly Test Scores This Year": "{{previousYear}}年の月次テスト結果",
+    "Selected Students Name": "{{ID}}：{{ClassNumber}}組 {{Name}}",
+    "Search by Name/ID": "氏名・学籍番号検索",
+    "school.subject1": "国語",
+    "school.subject2": "数学",
+    "school.subject3": "理科",
+    "school.subject4": "社会",
+    "school.subject5": "英語"
+}
